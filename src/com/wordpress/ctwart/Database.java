@@ -67,4 +67,24 @@ public class Database {
 			e.printStackTrace();
 		}
 	}
+
+	public void addTestData() {
+		String createStatement = null;
+		try {
+			createStatement = new String(Files.readAllBytes(Paths
+					.get("data/database-test-data.sql")));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		try {
+			statement = connection.createStatement();
+			statement.executeUpdate(createStatement);
+			statement.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 }
