@@ -1,6 +1,7 @@
+DELETE FROM categories;
+
 INSERT INTO categories VALUES
 ('Grafikkarten', NULL),
-
 ('AMD', 'Grafikkarten'),
 ('Radeon R7', 'AMD'),
 ('R7 240', 'Radeon R7'),
@@ -31,6 +32,5 @@ INSERT INTO categories VALUES
 ('GeForce GT', 'NVIDIA'),
 ('GeForce GT 630', 'GeForce GT'),
 ('GeForce GT 640', 'GeForce GT'),
-('GeForce GT 630', 'GeForce GT'),
 ('GeForce GT 730', 'GeForce GT'),
-('GeForce GT 640', 'GeForce GT');
+('GeForce GT 740', 'GeForce GT');
